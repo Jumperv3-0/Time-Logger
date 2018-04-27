@@ -1,18 +1,110 @@
 <div class="container">
   <form>
     <div class="form-group">
-      <label for="exampleInputEmail1">Email address</label>
-      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+      <label for="fname">First Name:</label>
+      <input type="text" class="form-control" id="fname" aria-describedby="firstName" placeholder="Enter first name">
+      <small id="emailHelp" class="form-text text-muted">We'll never share your name with anyone else.</small>
     </div>
     <div class="form-group">
-      <label for="exampleInputPassword1">Password</label>
-      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+      <label for="date">Date:</label>
+      <input type="text" class="form-control" id="date" aria-describedby="date" placeholder="mm/dd/yyyy">
     </div>
-    <div class="form-group form-check">
-      <input type="checkbox" class="form-check-input" id="exampleCheck1">
-      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+    <h5>Start time</h5>
+    <div style="padding-left: 1em;">
+      <div class="form-group">
+        <label for="startHour">Hour:</label>
+        <select class="form-control" id="startHour">
+          <option>Choose one...</option>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+          <option>6</option>
+          <option>7</option>
+          <option>8</option>
+          <option>9</option>
+          <option>10</option>
+          <option>11</option>
+          <option>12</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="startMinutes">Minutes:</label>
+        <select class="form-control" id="startMinutes">
+          <option>Choose one...</option>
+          <option>00</option>
+          <option>05</option>
+          <option>10</option>
+          <option>15</option>
+          <option>20</option>
+          <option>25</option>
+          <option>30</option>
+          <option>35</option>
+          <option>40</option>
+          <option>45</option>
+          <option>50</option>
+          <option>55</option>
+        </select>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" name="startRadio" type="radio" id="startAm" value="am">
+        <label class="form-check-label" for="startAm">am</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" name="startRadio" type="radio" id="startPm" value="pm">
+        <label class="form-check-label" for="startPm">pm</label>
+      </div>
     </div>
+    <h5>End time</h5>
+    <div style="padding-left: 1em;">
+      <div class="form-group">
+        <label for="endHour">Hour:</label>
+        <select class="form-control" id="endHour">
+          <option>Choose one...</option>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+          <option>6</option>
+          <option>7</option>
+          <option>8</option>
+          <option>9</option>
+          <option>10</option>
+          <option>11</option>
+          <option>12</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="endMinutes">Minutes:</label>
+        <select class="form-control" id="endMinutes">
+          <option>Choose one...</option>
+          <option>00</option>
+          <option>05</option>
+          <option>10</option>
+          <option>15</option>
+          <option>20</option>
+          <option>25</option>
+          <option>30</option>
+          <option>35</option>
+          <option>40</option>
+          <option>45</option>
+          <option>50</option>
+          <option>55</option>
+        </select>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" name="endRadio" type="radio" id="endAm" value="am">
+        <label class="form-check-label" for="endAm">am</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" name="endRadio" type="radio" id="endPm" value="pm">
+        <label class="form-check-label" for="endPm">pm</label>
+      </div>
+    </div>
+    <br>
     <button type="submit" class="btn btn-primary">Submit</button>
   </form>
 </div>
