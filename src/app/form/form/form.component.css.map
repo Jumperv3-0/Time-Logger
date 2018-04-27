@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "",
-"sources": [],
+"mappings": "AAAA,gBAAiB;EACf,YAAY,EAAE,GAAG",
+"sources": ["form.component.scss"],
 "names": [],
 "file": "form.component.css"
 }
