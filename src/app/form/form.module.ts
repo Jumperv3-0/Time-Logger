@@ -6,12 +6,17 @@ import { FormComponent } from './form/form.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { UniqueDirective } from './unique.directive';
 
+
 @NgModule({
-  imports: [
-    CommonModule,
-    FormRoutingModule,
-    ReactiveFormsModule,
-  ],
-  declarations: [ FormComponent, UniqueDirective ]
+    imports: [
+        CommonModule,
+        FormRoutingModule,
+        ReactiveFormsModule,
+    ],
+    declarations: [
+        FormComponent,
+        UniqueDirective,
+    ]
 })
-export class FormModule { }
+export class FormModule {
+}

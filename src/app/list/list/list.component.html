@@ -1,9 +1,35 @@
+<div *ngIf="error">{{error}}</div>
 <div class="container">
-  <ul class="list-group">
-    <li class="list-group-item">Cras justo odio</li>
-    <li class="list-group-item">Dapibus ac facilisis in</li>
-    <li class="list-group-item">Morbi leo risus</li>
-    <li class="list-group-item">Porta ac consectetur ac</li>
-    <li class="list-group-item">Vestibulum at eros</li>
-  </ul>
+    <ul style="padding-left: 0">
+        <li class="list-group-item" *ngFor="let log of logs">
+            <div class="row">
+                <div class="col-3">
+                    <h5 class="d-inline">Name:</h5>
+                    {{log.name | titlecase }}
+                </div>
+                <div class="col-3">
+                    <h5 class="d-inline">Date:</h5>
+                    {{log.date}}
+                </div>
+                <!--FIXME: this is not the correct way to do this-->
+                <div class="col-3">
+                    <h5 class="d-inline">Start time:</h5>
+                    <ul style="list-style-type: none">
+                        <li *ngFor="let start_time of log.start_time">{{start_time.hour}} {{start_time.minute}}
+                            {{start_time.meridiem}}
+                        </li>
+                    </ul>
+                </div>
+                <!--FIXME: this is not the correct way to do this-->
+                <div class="col-3">
+                    <h5 class="d-inline">End time:</h5>
+                    <ul style="list-style-type: none">
+                        <li *ngFor="let end_time of log.end_time">{{end_time.hour}} {{end_time.minute}}
+                            {{end_time.meridiem}}
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </li>
+    </ul>
 </div>

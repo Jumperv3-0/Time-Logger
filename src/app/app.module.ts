@@ -8,6 +8,8 @@ import { AppComponent } from './app.component';
 import { ListModule } from './list/list.module';
 import { FormModule } from './form/form.module';
 import { CoreModule } from './core/core.module';
+import { LogService } from './log.service';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -17,11 +19,12 @@ import { CoreModule } from './core/core.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     ListModule,
     FormModule,
     CoreModule
   ],
-  providers: [],
+  providers: [LogService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
